@@ -13,8 +13,9 @@ router.get('/', async (req, res) => {
 });
 
 router.post('/add', async (req, res) => {
+  const { name, text } = req.body;
   try {
-    await Comment.create(req.body);
+    await Comment.create({ name, text });
     return res.status(200).json({ msg: 'Success' });
   } catch (error) {}
 });
