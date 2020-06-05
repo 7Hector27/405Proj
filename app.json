@@ -1,0 +1,5 @@
+{
+  "name": "405 server",
+  "description": "a vanilla js project",
+  "keywords": ["node, express"]
+}
