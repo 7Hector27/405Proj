@@ -21,15 +21,3 @@ router.post('/add', async (req, res) => {
 });
 
 module.exports = router;
-/*
-try {
-  const { text } = req.body;
-  const newComment = new Comment({
-    text,
-  });
-  const savedComment = await newComment.save();
-  return res.status(200).json(savedComment);
-} catch (error) {
-  console.log(error);
-}
-*/
